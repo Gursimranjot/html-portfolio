@@ -1,0 +1,105 @@
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+
+.btn {
+    &.arrow-right {
+        i {
+            display: inline-block;
+            background-image: url(../../assets/images/arrow-black.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-left: 10px;
+            -webkit-transition: 0.2s ease-in;
+            -o-transition: 0.2s ease-in;
+            transition: 0.2s ease-in;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #9404BB;
+
+            i {
+                transform: translateX(10px);
+                background-image: url(../../assets/images/arrow-theme.svg);
+            }
+        }
+    }
+}
+
+.btn-primary {
+    background-color: #9404BB;
+    border-radius: 8px;
+    padding: 15px 10px;
+    font-size: 22px;
+    display: inline-block;
+    text-align: center;
+
+    i {
+        display: inline-block;
+        background-image: url(../../assets/images/arrow.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        margin-left: 10px;
+        -webkit-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+        transition: 0.2s ease-in;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #8606A9;
+        border-color: #8606A9;
+
+        i {
+            transform: translateX(10px);
+        }
+    }
+}
+
+.back-btn-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+    .back-btn {
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+
+    svg {
+        path {
+            -webkit-transition: 0.2s ease-in;
+            -o-transition: 0.2s ease-in;
+            transition: 0.2s ease-in;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        svg {
+            -webkit-transition: 0.2s ease-in;
+            -o-transition: 0.2s ease-in;
+            transition: 0.2s ease-in;
+            transform: translateX(-10px);
+
+            path {
+                stroke: #8606A9;
+            }
+        }
+    }
+}

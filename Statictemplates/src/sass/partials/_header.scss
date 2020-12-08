@@ -1,0 +1,6 @@
+.main-header{
+    position: relative;
+    @media  (min-width:991px) {
+        z-index: 30;
+    }
+}

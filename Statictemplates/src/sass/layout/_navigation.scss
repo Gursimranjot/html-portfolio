@@ -1,0 +1,103 @@
+.navigation-container {
+    padding: 55px 0;
+    @media screen and (max-width: 1366px) {
+        padding: 30px 0;
+    }
+    @media screen and (max-width:1199px) {
+        padding: 20px 0;
+    }
+    @media screen and (max-width:767px) {
+        padding: 10px 0;
+    }
+    .navigation {
+        @include flexbox;
+        @include justify-content(space-between);
+        @include align-items(center);
+        &__logo {
+            a {
+                display: inline-block;
+            }
+        }
+        &__img {
+            width: 340px;
+            height: 36px;
+            @media screen and (max-width: 767px) {
+                width: 170px;
+            }
+        }
+        &__menu {
+            @media screen and (max-width: 991px) {
+                margin-bottom: 0;
+                height: 100%;
+                border: none;
+                min-height: 60px;
+                z-index: 120;
+                width: 250px;
+                position: fixed;
+                right: -250px;
+                bottom: 0;
+                top: 0;
+                z-index: 500;
+                background-color: #ffffff;
+                height: 100%;
+                -webkit-transition: all 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                -moz-transition: all 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                -ms-transition: all 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                -o-transition: all 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                transition: all 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            }
+            &-list {
+                @include flexbox;
+                margin: 0;
+                @media screen and (max-width: 991px) {
+                    @include flex-direction(column);
+                    padding: 40px 20px
+                }
+                &-item:not(:last-child) {
+                    margin-right: 34px;
+                    @media screen and (max-width: 991px) {
+                        margin-right: 0px;
+                        margin-bottom: 20px;
+                    }
+                }
+                &-item {
+                    a {
+                        color: $color-black;
+                        position: relative;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        padding-bottom: 10px;
+                        @media screen and (max-width: 991px) {
+                            padding-bottom: 4px;
+                        }
+                        &:hover,
+                        &:active,
+                        &.active {
+                            color: #5E016F;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:991px) {
+            &.opened {
+                .navigation__menu {
+                    right: 0;
+                }
+            }
+        }
+        .mobile-menu {
+            a {
+                display: inline-block;
+            }
+            &__icon {
+                width: 40px;
+                display: none;
+                @media screen and (max-width: 991px) {
+                    display: block;
+                }
+            }
+        }
+    }
+}

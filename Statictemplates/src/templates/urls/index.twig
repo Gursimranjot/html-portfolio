@@ -1,0 +1,118 @@
+{% extends '../_home.twig' %} {% block titletag %}Home {% endblock %} {% block bodytag %}
+
+
+<main class="Site-content">
+    <section class="hero-container">
+        <div class="container">
+            <div class="hero-section">
+                <div class="row row-flex align-center column-mobile">
+                    <div class="col-md-6">
+                        <div class="hero-section__content">
+                            <span class="hero-section__welcome">Hey There !</span>
+                            <h1 class="hero-section__title">I’m Gursimran. I’m a UI Designer, Front-End Dev & YouTuber, I do</h1>
+                            {#
+                            <ul class="hero-section__text">
+                                <li>Mobile App Design
+                                </li>
+                                <li>Web Design
+                                </li>
+                                <li>Front-end Development</li>
+                                <li>Branding</li>
+                            </ul> #} {#
+                            <div class="hero-section__cta">
+                                <a href="/work.html" class="button  button__fill">Portfolio</a>
+                                <a href="/services.html" class="button  button__border">Services</a>
+                            </div> #}
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="hero-section__banner" style="background-image: url({{img}}/banner-pic.jpg);">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="case-study-home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="main-heading">Work</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-flex align-center flex-tab-mobile-coloum">
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="case-study-home__left" style="background-image: url({{img}}/case-study/home-case.jpg);">
+
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="case-study-home__right">
+                        <h3>
+                            Ktvity
+                        </h3>
+                        <p>A platform to share latest articles, videos, audio regarding web design and web developement</p>
+                        <a href="casestudy.html" class="btn btn-primary">View Case Study <i></i></a>
+                        <div class="cta-section">
+                            <a href="work.html" class="btn arrow-right">Browse Other Projects <i></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="main-heading">Services</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="service-content service-content__left">
+                        <div class="row-flex">
+                            <div class="service-item">
+                                <span>Research</span>
+                            </div>
+                            <div class="service-item">
+                                <span>Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-heading">
+                        <span>User interface Design</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-content service-content__right">
+                        <div class="row-flex">
+                            <div class="service-item">
+                                <span>Code</span>
+                            </div>
+                            <div class="service-item">
+                                <span>Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="service-heading">
+                    <span>Frontend Development</span>
+                   </div>
+                </div>
+            </div>
+            <div class="row text-center">
+               <div class="btn-portfolio">
+                <a href="services.html" class="btn arrow-right">View all <i></i></a>
+               </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
