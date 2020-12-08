@@ -13,6 +13,16 @@
                 min-height: 1006px;
             }
         }
+
+        @media (max-width:991px) {
+            width: 100%;
+
+            &:first-child {
+                .work-container {
+                    min-height: 450px;
+                }
+            }
+        }
     }
 
     .work-container {
@@ -29,6 +39,10 @@
             background-position: center;
             background-size: cover;
             transition: all 0.3s ease-in-out;
+        }
+
+        @media (max-width:991px) {
+            min-height: 450px;
         }
     }
 
@@ -50,6 +64,15 @@
             font-weight: bold;
             font-size: 30px;
             color: $primary-theme;
+        }
+
+        @media (max-width:991px) {
+            padding: 15px;
+
+            p {
+                font-size: 18px;
+            }
+
         }
     }
 

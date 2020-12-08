@@ -3114,13 +3114,21 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 
 .work-grid .column:first-child .work-container { min-height: 1006px; }
 
+@media (max-width: 991px) { .work-grid .column { width: 100%; }
+  .work-grid .column:first-child .work-container { min-height: 450px; } }
+
 .work-grid .work-container { background-color: #efefef; min-height: 493px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; padding: 20px; position: relative; }
 
 .work-grid .work-container.work-container-bg { background-repeat: no-repeat; background-position: center; background-size: cover; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 
+@media (max-width: 991px) { .work-grid .work-container { min-height: 450px; } }
+
 .work-grid .work-details { background-color: #fff; padding: 25px; width: -webkit-calc(100% - 40px); width: calc(100% - 40px); margin: 0 auto; -webkit-box-shadow: -1px 4px 8px -1px rgba(64, 64, 64, 0.18); box-shadow: -1px 4px 8px -1px rgba(64, 64, 64, 0.18); position: absolute; bottom: 20px; left: 0; right: 0; }
 
 .work-grid .work-details p { font-style: normal; font-weight: bold; font-size: 30px; color: #5E016F; }
+
+@media (max-width: 991px) { .work-grid .work-details { padding: 15px; }
+  .work-grid .work-details p { font-size: 18px; } }
 
 .work-grid .work-link { display: block; position: relative; overflow: hidden; }
 
