@@ -3364,9 +3364,11 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 
 .slider.slider-full .swiper-wrapper .swiper-slide a { padding-left: 0px; }
 
-.main-header { position: relative; }
+.main-header { position: relative; -webkit-transition: 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); -o-transition: 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); transition: 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); }
 
 @media (min-width: 991px) { .main-header { z-index: 30; } }
+
+.main-header.sticky-header { position: fixed; top: 0; width: 100%; z-index: 100; }
 
 .footer { margin-top: 50px; padding-bottom: 100px; }
 
@@ -3441,5 +3443,9 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 .navigation-container .navigation .mobile-menu__icon { width: 40px; display: none; }
 
 @media screen and (max-width: 991px) { .navigation-container .navigation .mobile-menu__icon { display: block; } }
+
+.sticky-header { -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); background-color: #ffffff; }
+
+.sticky-header .navigation-container { padding: 20px 0; }
 
 /*# sourceMappingURL=all.min.css.map */

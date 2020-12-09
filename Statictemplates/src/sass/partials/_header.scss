@@ -1,6 +1,16 @@
-.main-header{
+.main-header {
     position: relative;
-    @media  (min-width:991px) {
+    transition: 0.2s cubic-bezier(.17, .67, .83, .67);
+
+    @media (min-width:991px) {
         z-index: 30;
     }
+
+    &.sticky-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
 }

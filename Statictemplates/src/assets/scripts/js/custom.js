@@ -140,15 +140,6 @@ var swiper = new Swiper('.swiper-container-full', {
   });
 
 
-//   var swiper = new Swiper('.swiper-full', {
-//     spaceBetween: 30,
-//     slidesPerView: 'auto',
-//     freeMode: 'true',
-//     loop : false
-// });
-
-
-
 if ($('.swiper-container').length > 0) { //some-slider-wrap-in
     let swiperInstances = [];
     $(".swiper-container").each(function (index, element) { //some-slider-wrap-in
@@ -199,7 +190,23 @@ if ($('.swiper-container').length > 0) { //some-slider-wrap-in
 });
 
 
+// Code for page transition
+// Barba.Pjax.start();
 
+// Code for sticky header
+
+$(window).scroll(function() {    
+  var scroll = $(window).scrollTop();
+
+   //>=, not <=
+  if (scroll > 150) {
+      //clearHeader, not clearheader - caps H
+      $(".main-header").addClass("sticky-header");
+  }
+  else if (scroll < 150) {
+    $(".main-header").removeClass("sticky-header");
+  }
+});
 
 
 

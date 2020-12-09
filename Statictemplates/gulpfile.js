@@ -158,6 +158,7 @@ gulp.task('scripts', function() {
             // 'node_modules/jquery/dist/jquery.min.js',
             'node_modules/bootstrap/dist/js/bootstrap.js',
             'node_modules/swiper/dist/js/swiper.min.js',
+             'node_modules/barba.js/dist/barba.min.js',
             'node_modules/gsap/src/minified/TweenMax.min.js',
             'src/assets/scripts/libs/*.js',
             'src/assets/scripts/component/*.js',
