@@ -1,5 +1,8 @@
 .main-header {
-    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
     transition: 0.2s cubic-bezier(.17, .67, .83, .67);
 
     @media (min-width:991px) {
@@ -7,10 +10,8 @@
     }
 
     &.sticky-header {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 100;
+        // position: fixed;
+
     }
 
 }

@@ -150,6 +150,8 @@
         @media (max-width:991px) {
             @include transform(translateX(0));
             padding: 30px;
+            justify-content: flex-start;
+            min-height: auto;
         }
 
 
@@ -179,15 +181,15 @@
             }
 
             @media (max-width:991px) {
-                bottom: -30px;
+                bottom: 10px;
                 right: auto;
-                left: 0;
+                left: auto;
+                position: relative;
+                margin-top: 20px;
             }
 
             @media (max-width:767px) {
-                bottom: 10px;
-                right: auto;
-                left: 10px;
+
 
                 a {
                     font-size: 16px;
@@ -231,9 +233,12 @@
 .service {
     margin: 100px 0;
 
+    @media (max-width:991px) {
+        margin: 50px 0;
+    }
+
     .service-content {
         height: 484px;
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -297,8 +302,10 @@
     .service-heading {
         margin-top: 40px;
 
-        @media (max-width:767px) {
-            margin-bottom: 20px;
+        @media (max-width:991px) {
+            margin-top: 10px;
+            margin-bottom: 30px;
+
         }
 
         span {
@@ -313,6 +320,10 @@
 
     .btn-portfolio {
         margin-top: 50px;
+
+        @media (max-width:991px) {
+            margin-top: 10px;
+        }
 
         a {
             color: #000000;

@@ -2989,6 +2989,8 @@ html, body { height: 100%; }
 
 body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: normal; font-style: normal; font-display: swap; text-rendering: optimizeLegibility; text-rendering: geometricPrecision; font-smooth: always; font-smoothing: antialiased; -moz-font-smoothing: antialiased; -webkit-font-smoothing: antialiased; height: 100%; background-color: #F5F5F5; }
 
+.Site-content { padding-top: 150px; }
+
 .container { max-width: 1440px; width: 100%; }
 
 .row-flex { display: -moz-flex; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
@@ -3115,20 +3117,20 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 .work-grid .column:first-child .work-container { min-height: 1006px; }
 
 @media (max-width: 991px) { .work-grid .column { width: 100%; }
-  .work-grid .column:first-child .work-container { min-height: 450px; } }
+  .work-grid .column:first-child .work-container { min-height: 350px; } }
 
 .work-grid .work-container { background-color: #efefef; min-height: 493px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; padding: 20px; position: relative; }
 
 .work-grid .work-container.work-container-bg { background-repeat: no-repeat; background-position: center; background-size: cover; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 
-@media (max-width: 991px) { .work-grid .work-container { min-height: 450px; } }
+@media (max-width: 991px) { .work-grid .work-container { min-height: 350px; } }
 
 .work-grid .work-details { background-color: #fff; padding: 25px; width: -webkit-calc(100% - 40px); width: calc(100% - 40px); margin: 0 auto; -webkit-box-shadow: -1px 4px 8px -1px rgba(64, 64, 64, 0.18); box-shadow: -1px 4px 8px -1px rgba(64, 64, 64, 0.18); position: absolute; bottom: 20px; left: 0; right: 0; }
 
 .work-grid .work-details p { font-style: normal; font-weight: bold; font-size: 30px; color: #5E016F; }
 
-@media (max-width: 991px) { .work-grid .work-details { padding: 15px; }
-  .work-grid .work-details p { font-size: 18px; } }
+@media (max-width: 991px) { .work-grid .work-details { padding: 10px; }
+  .work-grid .work-details p { font-size: 14px; } }
 
 .work-grid .work-link { display: block; position: relative; overflow: hidden; }
 
@@ -3211,7 +3213,7 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 
 .case-study-home__right { background-color: #fff; padding: 60px; min-height: 360px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); position: relative; -webkit-transform: translateX(-20%); -ms-transform: translateX(-20%); transform: translateX(-20%); }
 
-@media (max-width: 991px) { .case-study-home__right { -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); padding: 30px; } }
+@media (max-width: 991px) { .case-study-home__right { -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); padding: 30px; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; min-height: auto; } }
 
 .case-study-home__right h3 { font-size: 40px; font-weight: 700; }
 
@@ -3223,10 +3225,9 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 
 .case-study-home__right .cta-section a { color: #000000; font-weight: bold; font-size: 20px; }
 
-@media (max-width: 991px) { .case-study-home__right .cta-section { bottom: -30px; right: auto; left: 0; } }
+@media (max-width: 991px) { .case-study-home__right .cta-section { bottom: 10px; right: auto; left: auto; position: relative; margin-top: 20px; } }
 
-@media (max-width: 767px) { .case-study-home__right .cta-section { bottom: 10px; right: auto; left: 10px; }
-  .case-study-home__right .cta-section a { font-size: 16px; } }
+@media (max-width: 767px) { .case-study-home__right .cta-section a { font-size: 16px; } }
 
 @media (max-width: 767px) { .case-study-home__right { padding: 20px; } }
 
@@ -3238,6 +3239,8 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 @media (max-width: 767px) { .case-study-home__left { height: 350px; } }
 
 .service { margin: 100px 0; }
+
+@media (max-width: 991px) { .service { margin: 50px 0; } }
 
 .service .service-content { height: 484px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; position: relative; }
 
@@ -3261,11 +3264,13 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 
 .service .service-heading { margin-top: 40px; }
 
-@media (max-width: 767px) { .service .service-heading { margin-bottom: 20px; } }
+@media (max-width: 991px) { .service .service-heading { margin-top: 10px; margin-bottom: 30px; } }
 
 .service .service-heading span { display: block; font-style: normal; font-weight: 600; font-size: 30px; line-height: 36px; text-transform: capitalize; }
 
 .service .btn-portfolio { margin-top: 50px; }
+
+@media (max-width: 991px) { .service .btn-portfolio { margin-top: 10px; } }
 
 .service .btn-portfolio a { color: #000000; font-weight: bold; font-size: 20px; }
 
@@ -3364,13 +3369,13 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 
 .slider.slider-full .swiper-wrapper .swiper-slide a { padding-left: 0px; }
 
-.main-header { position: relative; -webkit-transition: 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); -o-transition: 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); transition: 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); }
+.main-header { top: 0; width: 100%; z-index: 100; position: fixed; -webkit-transition: 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); -o-transition: 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); transition: 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); }
 
 @media (min-width: 991px) { .main-header { z-index: 30; } }
 
-.main-header.sticky-header { position: fixed; top: 0; width: 100%; z-index: 100; }
-
 .footer { margin-top: 50px; padding-bottom: 100px; }
+
+@media (max-width: 991px) { .footer { margin-top: 20px; padding-bottom: 30px; } }
 
 .footer__header { font-size: 48px; color: #000000; font-weight: bold; font-style: normal; }
 
@@ -3382,7 +3387,7 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 
 .footer .paragraph { font-size: 20px; margin-bottom: 20px; color: #000000; }
 
-@media (max-width: 767px) { .footer .paragraph { font-size: 16px; } }
+@media (max-width: 991px) { .footer .paragraph { font-size: 14px; } }
 
 .footer__contact { font-size: 22px; margin-bottom: 20px; }
 
@@ -3404,7 +3409,7 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 
 .footer__social ul svg:hover, .footer__social ul svg:focus { fill: #5E016F; }
 
-.navigation-container { padding: 55px 0; }
+.navigation-container { padding: 55px 0; -webkit-transition: 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); -o-transition: 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); transition: 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); }
 
 @media screen and (max-width: 1366px) { .navigation-container { padding: 30px 0; } }
 
@@ -3446,6 +3451,6 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 
 .sticky-header { -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); background-color: #ffffff; }
 
-.sticky-header .navigation-container { padding: 20px 0; }
+@media (min-width: 1200px) { .sticky-header .navigation-container { padding: 20px 0; } }
 
 /*# sourceMappingURL=all.min.css.map */
