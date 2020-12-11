@@ -21,6 +21,10 @@ body {
 
 .Site-content {
     padding-top: 150px;
+
+    @media (max-width:991px) {
+        padding-top: 100px;
+    }
 }
 
 .container {

@@ -2991,6 +2991,8 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 
 .Site-content { padding-top: 150px; }
 
+@media (max-width: 991px) { .Site-content { padding-top: 100px; } }
+
 .container { max-width: 1440px; width: 100%; }
 
 .row-flex { display: -moz-flex; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
@@ -3034,6 +3036,9 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 .back-btn-container:hover svg, .back-btn-container:focus svg { -webkit-transition: 0.2s ease-in; -o-transition: 0.2s ease-in; transition: 0.2s ease-in; -webkit-transform: translateX(-10px); -ms-transform: translateX(-10px); transform: translateX(-10px); }
 
 .back-btn-container:hover svg path, .back-btn-container:focus svg path { stroke: #8606A9; }
+
+@media (max-width: 991px) { .back-btn-container .back-btn { margin-top: 5px; margin-right: 10px; }
+  .back-btn-container svg { width: 30px; height: 30px; } }
 
 .story { width: 75%; margin: 0 auto; -webkit-box-shadow: 0, 3rem, 6rem, rgba(0, 0, 0, 0.1); box-shadow: 0, 3rem, 6rem, rgba(0, 0, 0, 0.1); background-color: rgba(255, 255, 255, 0.6); border-radius: 3px; padding: 6rem; padding-left: 9rem; font-size: 16px; -webkit-transform: skewX(-12deg); -ms-transform: skewX(-12deg); transform: skewX(-12deg); }
 
@@ -3140,11 +3145,16 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 
 .case-study-banner:before { position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; background: -webkit-gradient(linear, left top, right top, from(rgba(0, 22, 46, 0.65)), color-stop(70%, rgba(0, 22, 46, 0))); background: -o-linear-gradient(left, rgba(0, 22, 46, 0.65) 0%, rgba(0, 22, 46, 0) 70%); background: linear-gradient(to right, rgba(0, 22, 46, 0.65) 0%, rgba(0, 22, 46, 0) 70%); z-index: 2; content: ' '; }
 
+@media (max-width: 991px) { .case-study-banner { min-height: 280px; } }
+
 .case-study-content { text-align: center; padding: 15px 0; background-color: #efefef; }
 
 .case-study-content h2 { font-weight: 500; font-style: normal; font-size: 30px; }
 
 .case-study-content p { font-style: normal; font-weight: normal; font-size: 20px; }
+
+@media (max-width: 991px) { .case-study-content h2 { font-size: 24px; }
+  .case-study-content p { font-size: 16px; } }
 
 .case-statement { margin: 30px 0; }
 
@@ -3152,9 +3162,14 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 
 .case-statement p { max-width: 70%; margin: 0 auto; text-align: left; font-style: normal; font-weight: 500; font-size: 18px; }
 
+@media (max-width: 991px) { .case-statement { margin: 20px 0; }
+  .case-statement h3, .case-statement p { max-width: 100%; } }
+
 .case-picture { background-repeat: no-repeat; background-size: cover; min-height: 500px; }
 
 .case-picture.case-certificate { margin-bottom: 30px; }
+
+@media (max-width: 991px) { .case-picture { min-height: 300px; margin-bottom: 20px; } }
 
 .case-title { font-style: normal; font-weight: bold; font-size: 24px; margin: 20px 0 0 0; }
 
@@ -3262,11 +3277,11 @@ body { color: #000000; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
 
 .service .service-item span { font-style: normal; font-weight: 500; font-size: 24px; line-height: 29px; color: #fff; }
 
-.service .service-heading { margin-top: 40px; }
+.service .service-heading { margin-top: 20px; }
 
 @media (max-width: 991px) { .service .service-heading { margin-top: 10px; margin-bottom: 30px; } }
 
-.service .service-heading span { display: block; font-style: normal; font-weight: 600; font-size: 30px; line-height: 36px; text-transform: capitalize; }
+.service .service-heading span { display: block; font-style: normal; font-weight: 600; font-size: 24px; line-height: 36px; text-transform: capitalize; }
 
 .service .btn-portfolio { margin-top: 50px; }
 
